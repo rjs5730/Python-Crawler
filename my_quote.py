@@ -15,3 +15,4 @@ class QuotesSpider(scrapy.Spider):
                 'author': quote.css('small.author::text').extract_first(),
                 'tags': quote.css('div.tags a.tag::text').extract(),
             }
+  
